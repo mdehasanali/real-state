@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title> Javascript Slider </title>
+	<script src="https://kit.fontawesome.com/73bb794a2c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+	
+			<div class="slider_items">
+				<div class="slider_img active"><img src="img/1.jpg" alt="img" /></div>
+				<div class="slider_img"><img src="img/2.jpg" alt="img" /></div>
+				<div class="slider_img"><img src="img/3.jpg" alt="img" /></div>
+				<div class="slider_img"><img src="img/4.jpg" alt="img" /></div>
+				<div class="slider_img"><img src="img/5.jpg" alt="img" /></div>
+			</div>
+		
+
+
+	<script type="text/javascript">
+		
+		function EhasanSlider() {
+	
+	if (document.getElementsByClassName("slider_img")[0] .classList.contains("active")){
+	
+	document.getElementsByClassName("slider_img")[1] .classList.add("active")
+	document.getElementsByClassName("slider_img")[0] .classList.remove("active")
+}
+else if (document.getElementsByClassName("slider_img")[1] .classList.contains("active")){
+	
+	document.getElementsByClassName("slider_img")[2] .classList.add("active")
+	document.getElementsByClassName("slider_img")[1] .classList.remove("active")
+}
+else if (document.getElementsByClassName("slider_img")[2] .classList.contains("active")){
+	
+	document.getElementsByClassName("slider_img")[3] .classList.add("active")
+	document.getElementsByClassName("slider_img")[2] .classList.remove("active")
+}
+
+else if (document.getElementsByClassName("slider_img")[3] .classList.contains("active")){
+	
+	document.getElementsByClassName("slider_img")[4] .classList.add("active")
+	document.getElementsByClassName("slider_img")[3] .classList.remove("active")
+}
+else if (document.getElementsByClassName("slider_img")[4] .classList.contains("active")){
+	
+	document.getElementsByClassName("slider_img")[0] .classList.add("active")
+	document.getElementsByClassName("slider_img")[4] .classList.remove("active")
+}};
+
+setInterval(EhasanSlider,3000);
+
+	
+	</script>
+	
+	
+
+</body>
+</html>

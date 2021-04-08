@@ -1,0 +1,19 @@
+img{
+	width:100%;
+	max-width:100%;
+	height: 450px;
+}
+
+.slider_items {
+    position: relative;
+}
+
+.slider_img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+		transition:1.5s;
+}
+.active{
+	opacity: 1;
+}
